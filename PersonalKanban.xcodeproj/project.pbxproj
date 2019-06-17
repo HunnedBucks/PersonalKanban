@@ -36,6 +36,7 @@
 		715158C022B736B400A06D6E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158BE22B736B400A06D6E /* Enums.swift */; };
 		715158C222B737C000A06D6E /* GHTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; };
 		715158C322B737C000A06D6E /* GHTUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		715159A522B7987A00A06D6E /* EpicEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A422B7987A00A06D6E /* EpicEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		715158BD22B736B400A06D6E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		715158BE22B736B400A06D6E /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		715158C122B737C000A06D6E /* GHTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GHTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		715159A422B7987A00A06D6E /* EpicEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,16 +213,10 @@
 		7151589E22B735F700A06D6E /* view */ = {
 			isa = PBXGroup;
 			children = (
-				715158B622B7368800A06D6E /* TaskEditor.swift */,
-				715158B522B7368800A06D6E /* TaskReaderVC.swift */,
-				715158B722B7368800A06D6E /* TaskVC.swift */,
-				715158B322B7367500A06D6E /* TaskCell.swift */,
-				715158AC22B7365800A06D6E /* ArchivedTVC.swift */,
-				715158A822B7365800A06D6E /* BacklogTC.swift */,
-				715158AB22B7365800A06D6E /* EpicsTableVC.swift */,
-				715158A922B7365800A06D6E /* KanbanBoardTableVC.swift */,
-				715158AA22B7365800A06D6E /* MainMenuController.swift */,
-				715158A722B7365800A06D6E /* MoreVC.swift */,
+				715159A322B7925000A06D6E /* TableViewCells */,
+				715159A222B7924500A06D6E /* Epics */,
+				715159A122B7923600A06D6E /* Tasks */,
+				715159A022B7921E00A06D6E /* Main Menu */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -242,6 +238,45 @@
 				715158A322B7362F00A06D6E /* upArrow.png */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		715159A022B7921E00A06D6E /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				715158AA22B7365800A06D6E /* MainMenuController.swift */,
+				715158AC22B7365800A06D6E /* ArchivedTVC.swift */,
+				715158A822B7365800A06D6E /* BacklogTC.swift */,
+				715158AB22B7365800A06D6E /* EpicsTableVC.swift */,
+				715158A922B7365800A06D6E /* KanbanBoardTableVC.swift */,
+				715158A722B7365800A06D6E /* MoreVC.swift */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		715159A122B7923600A06D6E /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				715158B622B7368800A06D6E /* TaskEditor.swift */,
+				715158B522B7368800A06D6E /* TaskReaderVC.swift */,
+				715158B722B7368800A06D6E /* TaskVC.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		715159A222B7924500A06D6E /* Epics */ = {
+			isa = PBXGroup;
+			children = (
+				715159A422B7987A00A06D6E /* EpicEditor.swift */,
+			);
+			path = Epics;
+			sourceTree = "<group>";
+		};
+		715159A322B7925000A06D6E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				715158B322B7367500A06D6E /* TaskCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +433,7 @@
 				715158BC22B7369500A06D6E /* PersistenceManager.swift in Sources */,
 				7151589A22B735D500A06D6E /* Task+CoreDataClass.swift in Sources */,
 				7151586C22B7339700A06D6E /* PersonalKanban.xcdatamodeld in Sources */,
+				715159A522B7987A00A06D6E /* EpicEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

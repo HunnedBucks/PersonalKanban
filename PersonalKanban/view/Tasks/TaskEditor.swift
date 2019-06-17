@@ -41,7 +41,7 @@ class TaskEditor: EditorVC, UIObjectSetupLogic { //NavBarEnabledVC,  UIObjectSet
     }
     
     @objc override func save() {
-        self.task  = Task() //Task(name: nameTF.text!, notes: nameTV.text, storyPoints: 0, priority: 0) //(name: nameTF.text!, notes: "nameTV.text!", status: "Kanban", priorityRank: 0, storyPointsRank: 0, epic: nil)
+        self.task  = Task(name: nameTF.text!, info: nameTV.text) //Task(name: nameTF.text!, notes: nameTV.text, storyPoints: 0, priority: 0) //(name: nameTF.text!, notes: "nameTV.text!", status: "Kanban", priorityRank: 0, storyPointsRank: 0, epic: nil)
         PersistenceManager.shared.save()
         delegate.save()
     }

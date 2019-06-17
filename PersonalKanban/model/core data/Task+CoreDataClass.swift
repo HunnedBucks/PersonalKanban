@@ -13,4 +13,17 @@ import CoreData
 @objc(Task)
 public class Task: NSManagedObject {
 
+    convenience init(name: String, info: String?) {
+        self.init(entity: Task.entity(), insertInto: PersistenceManager.shared.context)
+        self.name = name
+        self.info = info
+        self.priorityLevel = 0
+        self.storyPointsLevel = 0
+        self.status = "STATIS STRING"
+        self.timesAccessed = 0
+//        self.epic
+//        self.relatedTasks
+//        self.blockingTasks
+//        self.tasksBlocked
+    }
 }

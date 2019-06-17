@@ -19,6 +19,11 @@ enum HamburgerMenuItems: String {
 
 class MainMenuController: HamburgerNavigatorVC, ChildPresentationDelegate {
     
+    override open func viewWillAppear(_ animated: Bool) {
+        let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTask(_:)))
+        rightBarBtns = [button1]
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,19 +42,36 @@ class MainMenuController: HamburgerNavigatorVC, ChildPresentationDelegate {
                             HamburgerMenuItems.More.rawValue]
     }
 
-    override open func viewWillAppear(_ animated: Bool) {
-        let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped(_:)))
-        rightBarBtns = [button1]
-    }
-
-    @objc func addButtonTapped(_ sender: UIBarButtonItem!) {
+    @objc func addTask(_ sender: UIBarButtonItem!) {
         super.slideMenuIn()
         let vc = TaskVC()
         present(vc, animated: true, completion: nil)
     }
     
-    override func transitionToNewDisplay(_ vcToPresent: UIViewController) {
-        super.transitionToNewDisplay(vcToPresent)
+    @objc func addEpic(_ sender: UIBarButtonItem!) {
+        super.slideMenuIn()
+        let vc = EpicEditor()
+        present(vc, animated: true, completion: nil)
+    }
+    
+    override func didChangeSelection(_ vc: UIViewController) {
+        if vc == hamburgerMenuVCs[1] {
+           // print("overriden didChangeSelection says the epic board was selected")
+            let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEpic(_:)))
+            rightBarBtns = [button1]
+        } else if vc == hamburgerMenuVCs[4] {
+            rightBarBtns = nil
+           // print("overriden didChangeSelection says the more board was selected")
+        } else {
+            let button1 = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTask(_:)))
+            rightBarBtns = [button1]
+        }
     }
 }
+
+
+
+//    override func transitionToNewDisplay(_ vcToPresent: UIViewController) {
+//        super.transitionToNewDisplay(vcToPresent)
+//    }
 
