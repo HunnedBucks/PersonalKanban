@@ -29,7 +29,7 @@ class TaskCell: UITableViewCell {
         guard let text = task.info else {
             return nil
         }
-        var cleanText = text.trimmingCharacters(in: .whitespaces)
+        let cleanText = text.trimmingCharacters(in: .whitespaces)
         guard cleanText.count > 0 else {
             return nil
         }
@@ -42,7 +42,7 @@ class TaskCell: UITableViewCell {
         guard let epic = task.epic else {
             return nil
         }
-        print("the epic was \(epic.name) (in TaskCell)")
+        print("the epic was \(String(describing: epic.name)) (in TaskCell)")
         return UIImage(imageLiteralResourceName: "hamburger.png")
     }
     lazy var upButton: UIButton = {
@@ -61,7 +61,7 @@ class TaskCell: UITableViewCell {
     convenience init(_ task: Task, _ tableDelegate: UITableViewController) {
         self.init(style: UITableViewCell.CellStyle.default , reuseIdentifier: GlobalConstants.ReuseIDs.TaskCell)
         self.task = task
-        self.delegate = tableDelegate as! TaskCellTableDelegate
+        self.delegate = tableDelegate as? TaskCellTableDelegate
         loadCellDataFromTask()
     }
     
@@ -105,7 +105,7 @@ class TaskCell: UITableViewCell {
 //            self.detailTextLabel?.text = "the subtitle works, this is it"
 //        }
         self.detailTextLabel?.text = "the subtitle works, this is it"
-        if let epic = task.epic {
+        if task.epic != nil {
             // create icon for the associated epic
         }
         

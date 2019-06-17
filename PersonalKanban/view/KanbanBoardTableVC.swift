@@ -79,7 +79,7 @@ class KanbanBoardTableVC: UITableViewController {
 
 extension KanbanBoardTableVC: TaskCellTableDelegate {
     func moveTaskCellToNextStatus(_ cell: TaskCell) {
-        guard let task = cell.task else {
+        guard cell.task != nil else {
             fatalError("a task cell attemoted to update its task's status, but task was equal to nil")
         }
        // task.incrementWorkflowStatus()
