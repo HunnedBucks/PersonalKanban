@@ -37,6 +37,9 @@
 		715158C222B737C000A06D6E /* GHTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; };
 		715158C322B737C000A06D6E /* GHTUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		715159A522B7987A00A06D6E /* EpicEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A422B7987A00A06D6E /* EpicEditor.swift */; };
+		715159A722B79B5B00A06D6E /* EpicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A622B79B5B00A06D6E /* EpicCell.swift */; };
+		715159A922B79FBB00A06D6E /* EpicReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A822B79FBB00A06D6E /* EpicReader.swift */; };
+		715159AB22B79FC900A06D6E /* EpicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159AA22B79FC900A06D6E /* EpicVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +80,6 @@
 		7151586B22B7339700A06D6E /* PersonalKanban.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalKanban.xcdatamodel; sourceTree = "<group>"; };
 		7151586D22B7339A00A06D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7151587022B7339A00A06D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7151587222B7339A00A06D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7151587722B7339A00A06D6E /* PersonalKanbanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalKanbanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7151587B22B7339A00A06D6E /* PersonalKanbanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalKanbanTests.swift; sourceTree = "<group>"; };
 		7151587D22B7339A00A06D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,9 @@
 		715158BE22B736B400A06D6E /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		715158C122B737C000A06D6E /* GHTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GHTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		715159A422B7987A00A06D6E /* EpicEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicEditor.swift; sourceTree = "<group>"; };
+		715159A622B79B5B00A06D6E /* EpicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicCell.swift; sourceTree = "<group>"; };
+		715159A822B79FBB00A06D6E /* EpicReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicReader.swift; sourceTree = "<group>"; };
+		715159AA22B79FC900A06D6E /* EpicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,14 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				715158A022B7360400A06D6E /* resources */,
-				7151589F22B735FD00A06D6E /* controller */,
-				7151589E22B735F700A06D6E /* view */,
 				7151589C22B735DC00A06D6E /* model */,
-				7151586522B7339700A06D6E /* ViewController.swift */,
-				7151586D22B7339A00A06D6E /* Assets.xcassets */,
-				7151586F22B7339A00A06D6E /* LaunchScreen.storyboard */,
-				7151587222B7339A00A06D6E /* Info.plist */,
-				7151586A22B7339700A06D6E /* PersonalKanban.xcdatamodeld */,
+				7151589E22B735F700A06D6E /* view */,
+				7151589F22B735FD00A06D6E /* controller */,
 			);
 			path = PersonalKanban;
 			sourceTree = "<group>";
@@ -202,6 +202,7 @@
 		7151589D22B735EB00A06D6E /* core data */ = {
 			isa = PBXGroup;
 			children = (
+				7151586A22B7339700A06D6E /* PersonalKanban.xcdatamodeld */,
 				7151589422B735D500A06D6E /* Epic+CoreDataClass.swift */,
 				7151589522B735D500A06D6E /* Epic+CoreDataProperties.swift */,
 				7151589622B735D500A06D6E /* Task+CoreDataClass.swift */,
@@ -213,6 +214,8 @@
 		7151589E22B735F700A06D6E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7151586F22B7339A00A06D6E /* LaunchScreen.storyboard */,
+				715159AC22B7A2B800A06D6E /* More */,
 				715159A322B7925000A06D6E /* TableViewCells */,
 				715159A222B7924500A06D6E /* Epics */,
 				715159A122B7923600A06D6E /* Tasks */,
@@ -233,6 +236,7 @@
 		715158A022B7360400A06D6E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				7151586D22B7339A00A06D6E /* Assets.xcassets */,
 				715158A122B7362F00A06D6E /* hamburgerMenuIcon.png */,
 				715158A222B7362F00A06D6E /* horizontalDotsIcon.png */,
 				715158A322B7362F00A06D6E /* upArrow.png */,
@@ -267,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				715159A422B7987A00A06D6E /* EpicEditor.swift */,
+				715159A822B79FBB00A06D6E /* EpicReader.swift */,
+				715159AA22B79FC900A06D6E /* EpicVC.swift */,
 			);
 			path = Epics;
 			sourceTree = "<group>";
@@ -275,8 +281,17 @@
 			isa = PBXGroup;
 			children = (
 				715158B322B7367500A06D6E /* TaskCell.swift */,
+				715159A622B79B5B00A06D6E /* EpicCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		715159AC22B7A2B800A06D6E /* More */ = {
+			isa = PBXGroup;
+			children = (
+				7151586522B7339700A06D6E /* ViewController.swift */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +434,7 @@
 				715158AE22B7365800A06D6E /* BacklogTC.swift in Sources */,
 				7151589822B735D500A06D6E /* Epic+CoreDataClass.swift in Sources */,
 				715158B122B7365800A06D6E /* EpicsTableVC.swift in Sources */,
+				715159AB22B79FC900A06D6E /* EpicVC.swift in Sources */,
 				7151589922B735D500A06D6E /* Epic+CoreDataProperties.swift in Sources */,
 				715158B222B7365800A06D6E /* ArchivedTVC.swift in Sources */,
 				715158B922B7368800A06D6E /* TaskEditor.swift in Sources */,
@@ -426,9 +442,11 @@
 				715158AF22B7365800A06D6E /* KanbanBoardTableVC.swift in Sources */,
 				7151586622B7339700A06D6E /* ViewController.swift in Sources */,
 				715158AD22B7365800A06D6E /* MoreVC.swift in Sources */,
+				715159A922B79FBB00A06D6E /* EpicReader.swift in Sources */,
 				715158B422B7367500A06D6E /* TaskCell.swift in Sources */,
 				7151586422B7339700A06D6E /* AppDelegate.swift in Sources */,
 				7151589B22B735D500A06D6E /* Task+CoreDataProperties.swift in Sources */,
+				715159A722B79B5B00A06D6E /* EpicCell.swift in Sources */,
 				715158B022B7365800A06D6E /* MainMenuController.swift in Sources */,
 				715158BC22B7369500A06D6E /* PersistenceManager.swift in Sources */,
 				7151589A22B735D500A06D6E /* Task+CoreDataClass.swift in Sources */,

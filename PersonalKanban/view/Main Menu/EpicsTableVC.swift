@@ -36,7 +36,7 @@ class EpicsTableVC: MultiSectionTC {
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate.transitionToNewDisplay(TaskVC())
+        //delegate.transitionToNewDisplay(TaskVC())
     }
 
     /*

@@ -40,10 +40,26 @@ class TaskEditor: EditorVC, UIObjectSetupLogic { //NavBarEnabledVC,  UIObjectSet
         layoutInStackView(nameTV, stackView)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let task = self.task {
+            nameTF.text = task.name
+            nameTV.text = task.info
+        }
+    }
+    
     @objc override func save() {
-        self.task  = Task(name: nameTF.text!, info: nameTV.text) //Task(name: nameTF.text!, notes: nameTV.text, storyPoints: 0, priority: 0) //(name: nameTF.text!, notes: "nameTV.text!", status: "Kanban", priorityRank: 0, storyPointsRank: 0, epic: nil)
-        PersistenceManager.shared.save()
-        delegate.save()
+        if let task = self.task {
+            task.name =  nameTF.text!
+            task.info = nameTV.text
+            PersistenceManager.shared.save()
+            delegate?.save()
+        } else {
+            self.task  = Task(name: nameTF.text!, info: nameTV.text) 
+            PersistenceManager.shared.save()
+            dismiss(animated: true, completion: nil)
+        }
+       
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 import GHTUIKit
 
 class TaskReaderVC: ReaderVC, UIObjectSetupLogic {
+    var task: Task!
     lazy var stackView: UIStackView = createStackView()
     lazy var scrollView: UIScrollView = createScrollView()
     lazy var nameLbl: UILabel = createLabel("name would be here")
@@ -31,6 +32,11 @@ class TaskReaderVC: ReaderVC, UIObjectSetupLogic {
         layoutStackView(stackView, scrollView)
         layoutInStackView(nameLbl, stackView)
         layoutInStackView(somethingLbl, stackView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        nameLbl.text = task.name
     }
     
     @objc override func back() {

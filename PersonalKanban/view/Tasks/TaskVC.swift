@@ -11,19 +11,23 @@ import UIKit
 
 class TaskVC: EditableContentNavTemplate {
     
+    var task: Task!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func setupEditorVC() -> UIViewController {
-        let e = self.editor ?? TaskEditor()
+        let e = TaskEditor() //self.editor ?? TaskEditor()
         e.delegate = self
+        e.task = self.task
         return e
     }
     
     override func setupViewerVC() -> UIViewController {
-        let r = self.reader ?? TaskReaderVC()
+        let r = TaskReaderVC()//self.reader ?? TaskReaderVC()
         r.delegate = self
+        r.task = self.task
         return r
     }
     

@@ -51,12 +51,13 @@ class KanbanBoardTableVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate.transitionToNewDisplay(TaskVC())
+        let vc = TaskVC()
+        vc.task = tasks[indexPath.row]
+        delegate.transitionToNewDisplay(vc)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TaskCell(tasks[indexPath.row], self) //tableView.dequeueReusableCell(withIdentifier: KanbanBoardTC.rID, for: indexPath) as! TaskCell
-       // cell.textLabel?.text = tasks[indexPath.row].name
+        let cell = TaskCell(tasks[indexPath.row], self)
         return cell
     }
     

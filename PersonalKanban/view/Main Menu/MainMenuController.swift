@@ -44,7 +44,7 @@ class MainMenuController: HamburgerNavigatorVC, ChildPresentationDelegate {
 
     @objc func addTask(_ sender: UIBarButtonItem!) {
         super.slideMenuIn()
-        let vc = TaskVC()
+        let vc = TaskEditor()
         present(vc, animated: true, completion: nil)
     }
     
