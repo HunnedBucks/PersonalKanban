@@ -9,12 +9,33 @@
 /* Begin PBXBuildFile section */
 		7151586422B7339700A06D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151586322B7339700A06D6E /* AppDelegate.swift */; };
 		7151586622B7339700A06D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151586522B7339700A06D6E /* ViewController.swift */; };
-		7151586922B7339700A06D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7151586722B7339700A06D6E /* Main.storyboard */; };
 		7151586C22B7339700A06D6E /* PersonalKanban.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7151586A22B7339700A06D6E /* PersonalKanban.xcdatamodeld */; };
 		7151586E22B7339A00A06D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7151586D22B7339A00A06D6E /* Assets.xcassets */; };
 		7151587122B7339A00A06D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7151586F22B7339A00A06D6E /* LaunchScreen.storyboard */; };
 		7151587C22B7339A00A06D6E /* PersonalKanbanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151587B22B7339A00A06D6E /* PersonalKanbanTests.swift */; };
 		7151588722B7339A00A06D6E /* PersonalKanbanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151588622B7339A00A06D6E /* PersonalKanbanUITests.swift */; };
+		7151589822B735D500A06D6E /* Epic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151589422B735D500A06D6E /* Epic+CoreDataClass.swift */; };
+		7151589922B735D500A06D6E /* Epic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151589522B735D500A06D6E /* Epic+CoreDataProperties.swift */; };
+		7151589A22B735D500A06D6E /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151589622B735D500A06D6E /* Task+CoreDataClass.swift */; };
+		7151589B22B735D500A06D6E /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151589722B735D500A06D6E /* Task+CoreDataProperties.swift */; };
+		715158A422B7362F00A06D6E /* hamburgerMenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 715158A122B7362F00A06D6E /* hamburgerMenuIcon.png */; };
+		715158A522B7362F00A06D6E /* horizontalDotsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 715158A222B7362F00A06D6E /* horizontalDotsIcon.png */; };
+		715158A622B7362F00A06D6E /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 715158A322B7362F00A06D6E /* upArrow.png */; };
+		715158AD22B7365800A06D6E /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158A722B7365800A06D6E /* MoreVC.swift */; };
+		715158AE22B7365800A06D6E /* BacklogTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158A822B7365800A06D6E /* BacklogTC.swift */; };
+		715158AF22B7365800A06D6E /* KanbanBoardTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158A922B7365800A06D6E /* KanbanBoardTableVC.swift */; };
+		715158B022B7365800A06D6E /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158AA22B7365800A06D6E /* MainMenuController.swift */; };
+		715158B122B7365800A06D6E /* EpicsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158AB22B7365800A06D6E /* EpicsTableVC.swift */; };
+		715158B222B7365800A06D6E /* ArchivedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158AC22B7365800A06D6E /* ArchivedTVC.swift */; };
+		715158B422B7367500A06D6E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158B322B7367500A06D6E /* TaskCell.swift */; };
+		715158B822B7368800A06D6E /* TaskReaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158B522B7368800A06D6E /* TaskReaderVC.swift */; };
+		715158B922B7368800A06D6E /* TaskEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158B622B7368800A06D6E /* TaskEditor.swift */; };
+		715158BA22B7368800A06D6E /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158B722B7368800A06D6E /* TaskVC.swift */; };
+		715158BC22B7369500A06D6E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158BB22B7369500A06D6E /* PersistenceManager.swift */; };
+		715158BF22B736B400A06D6E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158BD22B736B400A06D6E /* Constants.swift */; };
+		715158C022B736B400A06D6E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715158BE22B736B400A06D6E /* Enums.swift */; };
+		715158C222B737C000A06D6E /* GHTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; };
+		715158C322B737C000A06D6E /* GHTUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 715158C122B737C000A06D6E /* GHTUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +55,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		715158C422B737C000A06D6E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				715158C322B737C000A06D6E /* GHTUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7151586022B7339700A06D6E /* PersonalKanban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalKanban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7151586322B7339700A06D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7151586522B7339700A06D6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7151586822B7339700A06D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7151586B22B7339700A06D6E /* PersonalKanban.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalKanban.xcdatamodel; sourceTree = "<group>"; };
 		7151586D22B7339A00A06D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7151587022B7339A00A06D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +83,27 @@
 		7151588222B7339A00A06D6E /* PersonalKanbanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalKanbanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7151588622B7339A00A06D6E /* PersonalKanbanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalKanbanUITests.swift; sourceTree = "<group>"; };
 		7151588822B7339B00A06D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7151589422B735D500A06D6E /* Epic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Epic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7151589522B735D500A06D6E /* Epic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Epic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7151589622B735D500A06D6E /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7151589722B735D500A06D6E /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		715158A122B7362F00A06D6E /* hamburgerMenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburgerMenuIcon.png; sourceTree = "<group>"; };
+		715158A222B7362F00A06D6E /* horizontalDotsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontalDotsIcon.png; sourceTree = "<group>"; };
+		715158A322B7362F00A06D6E /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
+		715158A722B7365800A06D6E /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		715158A822B7365800A06D6E /* BacklogTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BacklogTC.swift; sourceTree = "<group>"; };
+		715158A922B7365800A06D6E /* KanbanBoardTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanbanBoardTableVC.swift; sourceTree = "<group>"; };
+		715158AA22B7365800A06D6E /* MainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		715158AB22B7365800A06D6E /* EpicsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicsTableVC.swift; sourceTree = "<group>"; };
+		715158AC22B7365800A06D6E /* ArchivedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedTVC.swift; sourceTree = "<group>"; };
+		715158B322B7367500A06D6E /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		715158B522B7368800A06D6E /* TaskReaderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskReaderVC.swift; sourceTree = "<group>"; };
+		715158B622B7368800A06D6E /* TaskEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditor.swift; sourceTree = "<group>"; };
+		715158B722B7368800A06D6E /* TaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
+		715158BB22B7369500A06D6E /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		715158BD22B736B400A06D6E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		715158BE22B736B400A06D6E /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		715158C122B737C000A06D6E /* GHTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GHTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715158C222B737C000A06D6E /* GHTUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +135,7 @@
 		7151585722B7339700A06D6E = {
 			isa = PBXGroup;
 			children = (
+				715158C122B737C000A06D6E /* GHTUIKit.framework */,
 				7151586222B7339700A06D6E /* PersonalKanban */,
 				7151587A22B7339A00A06D6E /* PersonalKanbanTests */,
 				7151588522B7339A00A06D6E /* PersonalKanbanUITests */,
@@ -99,9 +156,11 @@
 		7151586222B7339700A06D6E /* PersonalKanban */ = {
 			isa = PBXGroup;
 			children = (
-				7151586322B7339700A06D6E /* AppDelegate.swift */,
+				715158A022B7360400A06D6E /* resources */,
+				7151589F22B735FD00A06D6E /* controller */,
+				7151589E22B735F700A06D6E /* view */,
+				7151589C22B735DC00A06D6E /* model */,
 				7151586522B7339700A06D6E /* ViewController.swift */,
-				7151586722B7339700A06D6E /* Main.storyboard */,
 				7151586D22B7339A00A06D6E /* Assets.xcassets */,
 				7151586F22B7339A00A06D6E /* LaunchScreen.storyboard */,
 				7151587222B7339A00A06D6E /* Info.plist */,
@@ -128,6 +187,63 @@
 			path = PersonalKanbanUITests;
 			sourceTree = "<group>";
 		};
+		7151589C22B735DC00A06D6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				715158BD22B736B400A06D6E /* Constants.swift */,
+				715158BE22B736B400A06D6E /* Enums.swift */,
+				7151589D22B735EB00A06D6E /* core data */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7151589D22B735EB00A06D6E /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				7151589422B735D500A06D6E /* Epic+CoreDataClass.swift */,
+				7151589522B735D500A06D6E /* Epic+CoreDataProperties.swift */,
+				7151589622B735D500A06D6E /* Task+CoreDataClass.swift */,
+				7151589722B735D500A06D6E /* Task+CoreDataProperties.swift */,
+			);
+			path = "core data";
+			sourceTree = "<group>";
+		};
+		7151589E22B735F700A06D6E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				715158B622B7368800A06D6E /* TaskEditor.swift */,
+				715158B522B7368800A06D6E /* TaskReaderVC.swift */,
+				715158B722B7368800A06D6E /* TaskVC.swift */,
+				715158B322B7367500A06D6E /* TaskCell.swift */,
+				715158AC22B7365800A06D6E /* ArchivedTVC.swift */,
+				715158A822B7365800A06D6E /* BacklogTC.swift */,
+				715158AB22B7365800A06D6E /* EpicsTableVC.swift */,
+				715158A922B7365800A06D6E /* KanbanBoardTableVC.swift */,
+				715158AA22B7365800A06D6E /* MainMenuController.swift */,
+				715158A722B7365800A06D6E /* MoreVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7151589F22B735FD00A06D6E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				715158BB22B7369500A06D6E /* PersistenceManager.swift */,
+				7151586322B7339700A06D6E /* AppDelegate.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		715158A022B7360400A06D6E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				715158A122B7362F00A06D6E /* hamburgerMenuIcon.png */,
+				715158A222B7362F00A06D6E /* horizontalDotsIcon.png */,
+				715158A322B7362F00A06D6E /* upArrow.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +254,7 @@
 				7151585C22B7339700A06D6E /* Sources */,
 				7151585D22B7339700A06D6E /* Frameworks */,
 				7151585E22B7339700A06D6E /* Resources */,
+				715158C422B737C000A06D6E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7151587122B7339A00A06D6E /* LaunchScreen.storyboard in Resources */,
+				715158A622B7362F00A06D6E /* upArrow.png in Resources */,
+				715158A422B7362F00A06D6E /* hamburgerMenuIcon.png in Resources */,
+				715158A522B7362F00A06D6E /* horizontalDotsIcon.png in Resources */,
 				7151586E22B7339A00A06D6E /* Assets.xcassets in Resources */,
-				7151586922B7339700A06D6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +378,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715158BA22B7368800A06D6E /* TaskVC.swift in Sources */,
+				715158BF22B736B400A06D6E /* Constants.swift in Sources */,
+				715158C022B736B400A06D6E /* Enums.swift in Sources */,
+				715158AE22B7365800A06D6E /* BacklogTC.swift in Sources */,
+				7151589822B735D500A06D6E /* Epic+CoreDataClass.swift in Sources */,
+				715158B122B7365800A06D6E /* EpicsTableVC.swift in Sources */,
+				7151589922B735D500A06D6E /* Epic+CoreDataProperties.swift in Sources */,
+				715158B222B7365800A06D6E /* ArchivedTVC.swift in Sources */,
+				715158B922B7368800A06D6E /* TaskEditor.swift in Sources */,
+				715158B822B7368800A06D6E /* TaskReaderVC.swift in Sources */,
+				715158AF22B7365800A06D6E /* KanbanBoardTableVC.swift in Sources */,
 				7151586622B7339700A06D6E /* ViewController.swift in Sources */,
+				715158AD22B7365800A06D6E /* MoreVC.swift in Sources */,
+				715158B422B7367500A06D6E /* TaskCell.swift in Sources */,
 				7151586422B7339700A06D6E /* AppDelegate.swift in Sources */,
+				7151589B22B735D500A06D6E /* Task+CoreDataProperties.swift in Sources */,
+				715158B022B7365800A06D6E /* MainMenuController.swift in Sources */,
+				715158BC22B7369500A06D6E /* PersistenceManager.swift in Sources */,
+				7151589A22B735D500A06D6E /* Task+CoreDataClass.swift in Sources */,
 				7151586C22B7339700A06D6E /* PersonalKanban.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7151586722B7339700A06D6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7151586822B7339700A06D6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7151586F22B7339A00A06D6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
