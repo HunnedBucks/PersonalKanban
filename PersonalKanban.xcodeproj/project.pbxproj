@@ -40,6 +40,8 @@
 		715159A722B79B5B00A06D6E /* EpicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A622B79B5B00A06D6E /* EpicCell.swift */; };
 		715159A922B79FBB00A06D6E /* EpicReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159A822B79FBB00A06D6E /* EpicReader.swift */; };
 		715159AB22B79FC900A06D6E /* EpicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159AA22B79FC900A06D6E /* EpicVC.swift */; };
+		715159B622B7ADE600A06D6E /* StyledLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159B522B7ADE600A06D6E /* StyledLabel.swift */; };
+		715159BC22B7E66B00A06D6E /* StyledTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715159BB22B7E66B00A06D6E /* StyledTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		715159A622B79B5B00A06D6E /* EpicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicCell.swift; sourceTree = "<group>"; };
 		715159A822B79FBB00A06D6E /* EpicReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicReader.swift; sourceTree = "<group>"; };
 		715159AA22B79FC900A06D6E /* EpicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicVC.swift; sourceTree = "<group>"; };
+		715159B522B7ADE600A06D6E /* StyledLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledLabel.swift; sourceTree = "<group>"; };
+		715159BB22B7E66B00A06D6E /* StyledTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		7151586222B7339700A06D6E /* PersonalKanban */ = {
 			isa = PBXGroup;
 			children = (
+				715159B422B7ADB800A06D6E /* UI Objects */,
 				715158A022B7360400A06D6E /* resources */,
 				7151589C22B735DC00A06D6E /* model */,
 				7151589E22B735F700A06D6E /* view */,
@@ -292,6 +297,15 @@
 				7151586522B7339700A06D6E /* ViewController.swift */,
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		715159B422B7ADB800A06D6E /* UI Objects */ = {
+			isa = PBXGroup;
+			children = (
+				715159B522B7ADE600A06D6E /* StyledLabel.swift */,
+				715159BB22B7E66B00A06D6E /* StyledTextView.swift */,
+			);
+			path = "UI Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +446,7 @@
 				715158BF22B736B400A06D6E /* Constants.swift in Sources */,
 				715158C022B736B400A06D6E /* Enums.swift in Sources */,
 				715158AE22B7365800A06D6E /* BacklogTC.swift in Sources */,
+				715159B622B7ADE600A06D6E /* StyledLabel.swift in Sources */,
 				7151589822B735D500A06D6E /* Epic+CoreDataClass.swift in Sources */,
 				715158B122B7365800A06D6E /* EpicsTableVC.swift in Sources */,
 				715159AB22B79FC900A06D6E /* EpicVC.swift in Sources */,
@@ -441,6 +456,7 @@
 				715158B822B7368800A06D6E /* TaskReaderVC.swift in Sources */,
 				715158AF22B7365800A06D6E /* KanbanBoardTableVC.swift in Sources */,
 				7151586622B7339700A06D6E /* ViewController.swift in Sources */,
+				715159BC22B7E66B00A06D6E /* StyledTextView.swift in Sources */,
 				715158AD22B7365800A06D6E /* MoreVC.swift in Sources */,
 				715159A922B79FBB00A06D6E /* EpicReader.swift in Sources */,
 				715158B422B7367500A06D6E /* TaskCell.swift in Sources */,
